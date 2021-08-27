@@ -63,7 +63,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
 
   return (
     
-    <Flex w="50%"  h={["250px", "1080px"]} {/*mx="auto"*/} mb={["5", "10"]}>
+    <Flex w="98%"  h={["250px", "1080px"]} mx="auto" mb={["5", "10"]}>
       <Swiper
         slidesPerView={1}
         navigation
