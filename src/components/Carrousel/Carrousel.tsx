@@ -39,31 +39,31 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
       );
     }
     return (
-      <Link href={`${campaign.slug}`}>
-        <a>
-          <Heading
-            fontSize={["3xl", "4xl", "5xl"]}
-            color="white"
-            fontWeight="bold"
-          >
-            {campaign.title}
-          </Heading>
-          <Text
-            fontWeight="bold"
-            color="white"
-            fontSize={["0.8rem", "1xl", "2xl"]}
-            mt={["2", "4"]}
-          >
-            {campaign.summary}
-          </Text>
-        </a>
-      </Link>
+      // <Link href={`${campaign.slug}`}>
+      <a>
+        <Heading
+          fontSize={["3xl", "4xl", "5xl"]}
+          color="white"
+          fontWeight="bold"
+        >
+          {campaign.title}
+        </Heading>
+        <Text
+          fontWeight="bold"
+          color="white"
+          fontSize={["0.8rem", "1xl", "2xl"]}
+          mt={["2", "4"]}
+        >
+          {campaign.summary}
+        </Text>
+      </a>
+      // </Link>
     );
   }
 
   return (
-    
-    <Flex w="98%"  h={["250px", "1080px"]} mx="auto" mb={["5", "10"]}>
+
+    <Flex w="98%" h={["250px", "1244px", "1244px"]} mx="auto" mb={["5", "10"]}>
       <Swiper
         slidesPerView={1}
         navigation
@@ -76,24 +76,26 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
       >
         {campaigns.map((campaign, index) => (
           <SwiperSlide key={index}>
-            <Flex
-              w="100%"
-              h="100%"
-              align="center"
-              justify="center"
-              direction="column"
-              link={`url('${campaign.slug}')`}
-              bgImage={`url('${campaign.path}')`}
-              bgPosition="100%"
-              bgRepeat="no-repeat"
-              bgSize="cover"
-              textAlign="center"
-            >
-              <IsVideo {...campaign}></IsVideo>
-            </Flex>
+            <Link href={`${campaign.slug}`}>
+              <Flex
+                w="100%"
+                h="100%"
+                align="center"
+                justify="center"
+                direction="column"
+                bgImage={`url('${campaign.path}')`}
+                bgPosition="100%"
+                bgRepeat="no-repeat"
+                bgSize="cover"
+                textAlign="center"
+                cursor="pointer"
+              >
+                <IsVideo {...campaign}></IsVideo>
+              </Flex>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
-    </Flex>
+    </Flex >
   );
 }
