@@ -7,7 +7,7 @@ import BoxTextoFicha from "../components/MedSenior/BoxTextoFicha/BoxTextoFicha";
 import Galeria from "../components/Politintas/Galeria/Galeria";
 import QuadroTexto from "../components/MedSenior/QuadroTexto/QuadroTexto";
 
-import { CarrouselCampaignComponent } from "../constants/CarrouselConstants";
+import { CarrouselCampaignComponent, CarrouselCampaignSerraComponent } from "../constants/CarrouselConstants";
 import {
   chakra,
   Box,
@@ -66,7 +66,20 @@ export default function Politintas() {
 
 
 
-    <Galeria />
+    
+    <Flex
+        bg={useColorModeValue("yellow.700", "gray.600")}
+        w="full"
+        alignItems="center"
+        justifyContent="center"
+        p={50}
+      >
+        <Carrousel campaigns={CarrouselCampaignSerraComponent}></Carrousel>
+
+
+
+        
+      </Flex>
 
 
       
