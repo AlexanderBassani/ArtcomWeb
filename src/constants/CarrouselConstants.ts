@@ -9,8 +9,8 @@ export const CarrouselCampaignComponent: CarrouselProps[] = [
   },
   {
     slug: "/politintas",
-    title: "Geração+",
-    summary: "MedSênior",
+    title: "",
+    summary: "",
     path: "/images/topo/resized-image-Promo.jpeg",
     type: "image",
   
@@ -18,15 +18,15 @@ export const CarrouselCampaignComponent: CarrouselProps[] = [
 
   {
     slug: "",
-    title: "Energia para Você Brilhar",
-    summary: "Café Meridiano",
+    title: "",
+    summary: "",
     path: "/images/topo/Banners_site-02.jpg",
     type: "image",
   },
 
   {
     slug: "",
-    title: "OK Supermercado",
+    title: "",
     summary: "",
     path: "images/topo/Banners_site-03.jpg",
     type: "image",
