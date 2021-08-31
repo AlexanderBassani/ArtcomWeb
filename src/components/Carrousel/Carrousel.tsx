@@ -2,6 +2,8 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import SwiperCore, {
   Navigation,
+  Image,
+  Box,
   Pagination,
   Scrollbar,
   A11y,
@@ -24,7 +26,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
     if (isVideo == "video") {
       console.log("campaignVideo", campaign);
       return (
-        <Flex w="80%" h="90%">
+        <Flex w={["640px","1366px"]} h={["360px", "1024px"]} >
           <iframe
             src={campaign.path}
             title={campaign.title}
@@ -35,6 +37,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
             loading="lazy"
             allowFullScreen
           ></iframe>
+       
         </Flex>
       );
     }
@@ -63,7 +66,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
 
   return (
 
-    <Flex w="98%" h={["250px", "1244px", "1244px"]} mx="auto" mb={["5", "10"]}>
+    <Flex   w={["640px","1366px"]} h={["360px", "1024px"]}  mx="auto" mb={["5", "1"]}>
       <Swiper
         slidesPerView={1}
         navigation
@@ -78,21 +81,27 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
           <SwiperSlide key={index}>
             <Link href={`${campaign.slug}`}>
               <Flex
-                w="100%"
-                h="100%"
+                w={["640px","1366px"]} 
+                h={["360px", "1024px"]} 
                 align="center"
                 justify="center"
                 direction="column"
-                bgImage={`url('${campaign.path}')`}
+       bgImage={`url('${campaign.path}')`} 
                 bgPosition="100%"
                 bgRepeat="no-repeat"
                 bgSize="cover"
                 textAlign="center"
                 cursor="pointer"
               >
-                <IsVideo {...campaign}></IsVideo>
+              <IsVideo {...campaign}></IsVideo> */
+          
+
+            
+
               </Flex>
-            </Link>
+              
+              
+               </Link>
           </SwiperSlide>
         ))}
       </Swiper>
