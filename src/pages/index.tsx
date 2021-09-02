@@ -25,10 +25,12 @@ export default function Home() {
       <Header bg="yellow.700" />
      
      
-     
+     {/* w={["270px","640px","720px","1366px"]} h={["200px","360px","540x","1024px"]}  mx="auto" mb={["5", "1"]} */}
+
+
       <Flex
+       
         bg={useColorModeValue("yellow.700", "gray.600")}
-        w="full"
         alignItems="center"
         justifyContent="center"
         p={50}
@@ -140,30 +142,17 @@ export default function Home() {
           mx="auto"
         >
           <Box textAlign={{ lg: "center" }} mb={32}>
-            <chakra.h1
-              fontSize={{ base: "4xl", sm: "5xl" }}
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              lineHeight="shorter"
-              color={useColorModeValue("black", "gray.100")}
-            >
-              <chakra.p mt={2}>Acesse outras Campanhas</chakra.p>
-            </chakra.h1>
+            
           </Box>
 
 
 
 
 
+          <SimpleGrid columns={[1, null, 2]} spacing="40px">
 
-          {/* Campanha Politintas */}
-          <SimpleGrid
-            alignItems="start"
-            columns={{ base: 1, md: 2 }}
-            mb={24}
-            spacingY={{ base: 10, md: 32 }}
-            spacingX={{ base: 10, md: 24 }}
-          >
+
+         
             <Box  order={{ md: 2 }}>
               <chakra.h2
                 mb={4}
@@ -176,15 +165,16 @@ export default function Home() {
               >
                 POLITINTAS É A PRIMEIRA EM TINTAS E TUDO MAIS
              </chakra.h2>
-    
+             <Link href="/politintas">
               <Image
-                w="100%"
-                h="100%"
+                w="80%"
+                
                 fit="fill"
                 src="/images/campanhas/politintas/politintas.jpg"
                 alt="Politintas"
                 loading="lazy"
               />
+              </Link>
             <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
@@ -206,9 +196,7 @@ export default function Home() {
                   </Link>
               </Button>
             </Box>
-          </SimpleGrid>
-
-
+        
 
 
 
@@ -222,15 +210,8 @@ export default function Home() {
 
           {/* Campanha Parque -Serra */}
      
-       <SimpleGrid
-            alignItems="start"
-            columns={{ base: 1, md: 2 }}
-            mb={24}
-            spacingY={{ base: 10, md: 32 }}
-            spacingX={{ base: 10, md: 24 }}
-          >
             <Box  order={{ md: 2 }}>
-              <chakra.h2
+              <chakra.h3
                 mb={4}
                 fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
                 fontWeight="extrabold"
@@ -241,16 +222,17 @@ export default function Home() {
                 >
 
 AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
-              </chakra.h2>
-            
+              </chakra.h3>
+              <Link href="/serra">
               <Image
-                w="100%"
-                h="100%"
+                 w="80%"
+              
                 fit="fill"
                 src="/images/campanhas/serra/serra.jpg"
                 alt=""
                 loading="lazy"
               />
+              </Link>
                       
               <chakra.p
                 mb={5}
@@ -275,24 +257,13 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
               </Button>
             </Box>
         
-          </SimpleGrid>
+      
 
           {/*campanha serra fim*/}
 
-
-
-
-
-     
           {/* Campanha Cariacica */}
      
-       <SimpleGrid
-            alignItems="start"
-            columns={{ base: 1, md: 2 }}
-            mb={24}
-            spacingY={{ base: 10, md: 32 }}
-            spacingX={{ base: 10, md: 24 }}
-          >
+      
             <Box  order={{ md: 2 }}>
               <chakra.h2
                 mb={4}
@@ -306,16 +277,16 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
 
 CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               </chakra.h2>
-            
+              <Link href="/cariacica">
               <Image
-                w="100%"
-                h="100%"
+                w="80%"
+                
                 fit="fill"
                 src="/images/campanhas/cariacica/cariacica.jpg"
                 alt="campanha cariacica"
                 loading="lazy"
               />
-                      
+              </Link>   
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
@@ -339,8 +310,7 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               </Button>
             </Box>
         
-          </SimpleGrid>
-
+         
 
 
 
@@ -357,13 +327,7 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
 
           {/* Campanha Cariacica */}
      
-          <SimpleGrid
-            alignItems="start"
-            columns={{ base: 1, md: 2 }}
-            mb={24}
-            spacingY={{ base: 10, md: 32 }}
-            spacingX={{ base: 10, md: 24 }}
-          >
+        
             <Box  order={{ md: 2 }}>
               <chakra.h2
                 mb={4}
@@ -377,15 +341,16 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
 
            A TRINUNA: FAKE NEWS
               </chakra.h2>
-            
+              <Link href="/tribuna">
               <Image
-                w="100%"
-                h="100%"
+                w="80%"
+                
                 fit="fill"
                 src="/images/campanhas/tribuna/tribuna.jpg"
                 alt="campanha cariacica"
                 loading="lazy"
               />
+              </Link>
                       
               <chakra.p
                 mb={5}
@@ -409,10 +374,10 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               </Button>
             </Box>
         
+        
+
+
           </SimpleGrid>
-
-
-
 
 
 

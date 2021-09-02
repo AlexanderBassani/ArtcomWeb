@@ -21,7 +21,8 @@ export default function About() {
   return (
 
 
-          <Flex bg="white.700" width="100%" flexDirection="column">
+          <Flex  w={["Full","270px","640px","720px","1366px","1024px"]} h={["Full","200px","360px","540x","1024px","768px"]}  mx="auto" mb={["5", "1"]}
+          bg="white.700" width="100%" flexDirection="column">
                 <SEO title="Sobre | ArtCom" description="Some description" />
 
 
@@ -116,7 +117,7 @@ export default function About() {
 
 
 
-        <SimpleGrid columns={3}>
+        <SimpleGrid columns={2}>
         {CardTeamComponent.map((employee, index) => (
           <CardTeam
             key={index}

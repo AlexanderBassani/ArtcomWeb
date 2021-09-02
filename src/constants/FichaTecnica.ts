@@ -135,7 +135,7 @@ export const CampanhaPolitintasComponent: CampanhaProps[] = [
 
     export const FichaTribunaComponent: FichaTecnicaProps[] = [
       {
-       name: " Prefeitura da Serra" ,
+       name: " A Tribuna" ,
        role: "Cliente",
       },
       {

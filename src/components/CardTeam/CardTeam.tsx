@@ -12,14 +12,13 @@ import { CardTeamProps } from "../../types/types";
 
 export default function CardTeam({ name, role, path }: CardTeamProps) {
   return (
-    <Flex
+    <Flex   w="200px"  mx="auto" mb={["5", "1"]}
       bg={useColorModeValue("white", "gray.600")}
       p={50}
       alignItems="center"
       justifyContent="center"
     >
-      <Box
-        w="xs"
+      <Box   w={["xs","400px"]} h={["xs","400px"]} 
         bg={useColorModeValue("white", "gray.800")}
         shadow="lg"
         rounded="lg"

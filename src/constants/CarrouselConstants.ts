@@ -11,7 +11,7 @@ export const CarrouselCampaignComponent: CarrouselProps[] = [
     slug: "/politintas",
     title: "",
     summary: "",
-    path: "/images/topo/resized-image-Promo.jpeg",
+    path: "/images/topo/Banners_site_Prancheta 1.jpg",
     type: "image",
   
   },
