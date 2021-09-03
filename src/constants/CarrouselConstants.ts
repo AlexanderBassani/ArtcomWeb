@@ -70,22 +70,22 @@ export const CarrouselCampaignSerraComponent: CarrouselProps[] = [
   {
     slug: "",
     title: "Campanha Serra",
-    summary: "Parque da Cidade",
-    path: "/images/campanhas/serra/ps_0055_19_anúncio_25,5cmx32cm_2_Prancheta 1.png",
+    summary: "",
+    path: "/images/campanhas/serra/Ser1.jpg",
     type: "image",
   },
   {
     slug: "",
     title: "",
     summary: "",
-    path: "/images/campanhas/serra/ps_0055_19_painel-01.png",
+    path: "/images/campanhas/serra/Ser2.gpg",
     type: "image",
   },
   {
     slug: "",
     title: "",
     summary: "shoes_summary",
-    path: "/images/campanhas/serra/ps_0059_19_cintamento-59,5x16cm_TESTE-02.png",
+    path: "/images/campanhas/serra/Serra2 2.jpg",
     type: "image",
   },
 
