@@ -25,7 +25,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import SEO from "../components/SEO";
-export default function Politintas() {
+export default function MedSenior() {
   return (
     <>
       <SEO title="Home | ArtCom" description="Some description" />

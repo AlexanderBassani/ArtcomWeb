@@ -25,8 +25,8 @@ import {
   Image,
 } from "@chakra-ui/react";
 import SEO from "../components/SEO";
-import QuadroTexto from "../components/Politintas/QuadroTexto/QuadroTexto";
-export default function Politintas() {
+import QuadroTexto from "../components/Tribuna/QuadroTexto/QuadroTexto";
+export default function Tribuna() {
   return (
     <>
       <SEO title="Home | ArtCom" description="Some description" />

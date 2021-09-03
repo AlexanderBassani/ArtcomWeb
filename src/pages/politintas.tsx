@@ -3,7 +3,7 @@ import React from "react";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Header from "../components/Header/Header"; 
 import Footer from "../components/Footer/Footer";
-import BoxTextoFicha from "../components/Politintas/BoxTextoFicha/BoxTextoFicha";
+import BoxTextoFichaPolitintas from "../components/Politintas/BoxTextoFicha/BoxTextoFicha";
 import Galeria from "../components/Politintas/Galeria/Galeria";
 
 
@@ -25,7 +25,6 @@ import {
   Image,
 } from "@chakra-ui/react";
 import SEO from "../components/SEO";
-import QuadroTexto from "../components/Politintas/QuadroTexto/QuadroTexto";
 export default function Politintas() {
   return (
     <>
@@ -60,15 +59,14 @@ export default function Politintas() {
       </AspectRatio>
 
       
-    <BoxTextoFicha />
+    <BoxTextoFichaPolitintas />
 
 
 
 
 
 
-    <Galeria />
-
+   
 
       
 
@@ -89,79 +87,6 @@ export default function Politintas() {
           mx="auto"
         >
          
-
-
-
-          
-          {/* Campanha Politintas 
-          <SimpleGrid
-            alignItems="start"
-            columns={{ base: 1, md: 2 }}
-            mb={24}
-            spacingY={{ base: 10, md: 32 }}
-            spacingX={{ base: 10, md: 24 }}
-          >
-
-            <VStack
-              divider={<StackDivider borderColor="gray.200" />}
-              spacing={4}
-              align="stretch"
-            >
-              <Box h="40px" bg="yellow.200">
-                1
-              </Box>
-              <Box h="40px" bg="tomato">
-                2
-              </Box>
-              <Box h="40px" bg="pink.100">
-                3
-              </Box>
-            </VStack>
-
-        
-
-
-          </SimpleGrid>
-
-  */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-
-
-
-
-
-
 
 
 

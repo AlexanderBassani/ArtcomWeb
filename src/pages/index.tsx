@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer";
 
 import Carrousel from "../components/Carrousel/Carrousel";
 import { CarrouselCampaignComponent } from "../constants/CarrouselConstants";
+
 import {
   chakra,
   Box,
@@ -38,8 +39,6 @@ export default function Home() {
         <Carrousel campaigns={CarrouselCampaignComponent}></Carrousel>
 
 
-
-        
       </Flex>
 
 
@@ -174,15 +173,17 @@ export default function Home() {
                 alt="Politintas"
                 loading="lazy"
               />
-              </Link>
+           <Box w="80%">    
             <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
                 color={useColorModeValue("black", "gray.400")}
                 fontSize={{ md: "lg" }}
               >
+
              A Politintas ocupa a primeira colocação no Recall de Marcas da Rede Gazeta há 18 anos. E, muito além das tintas, a rede também é especialista em complementos, ferramentas e utilidades para o lar. A nova campanha da marca ratifica sua própria história, expressando a tradição, qualidade e know-how obtido no passar dos anos.
               </chakra.p>
+              </Box>
               <Button
                 w={{ base: "full", sm: "auto" }}
                 size="lg"
@@ -191,10 +192,11 @@ export default function Home() {
                 color={useColorModeValue("white", "gray.200")}
                 as="a"
               >
-                  <Link href="/politintas">
+                 
                     Leia Mais
-                  </Link>
+                 
               </Button>
+              </Link>
             </Box>
         
 
@@ -221,7 +223,7 @@ export default function Home() {
                 lineHeight={{ md: "shorter" }}
                 >
 
-AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
+          O PARQUE DA CIDADE É O MAIOR DO ESTADO
               </chakra.h3>
               <Link href="/serra">
               <Image
@@ -232,7 +234,8 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
                 alt=""
                 loading="lazy"
               />
-              </Link>
+            
+            <Box w="80%">    
                       
               <chakra.p
                 mb={5}
@@ -242,6 +245,8 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
               >
            O Parque da Cidade, na Serra (ES), é um local cheio de atrativos e beleza, que recebe milhares de cidadãos por dia. Após a realização das obras de ampliação no local, o Parque passou a ser o maior do Espírito Santo. Motivo de orgulho para a cidade e satisfação para seus cidadãos, a campanha apresentou a estrutura do local e seu aproveitamento pelas famílias, esportistas, crianças, jovens e outros perfis de público frequentador. 
               </chakra.p>
+
+              </Box>
               <Button
                 w={{ base: "full", sm: "auto" }}
                 size="lg"
@@ -250,11 +255,13 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
                 color={useColorModeValue("white", "gray.200")}
                 as="a"
               >
-          <Link href="/serra">
+         
                     Leia Mais
-                  </Link>
+               
 
               </Button>
+
+              </Link>
             </Box>
         
       
@@ -275,7 +282,7 @@ AGORA O PARQUE DA CIDADE É O MAIOR PARQUE DO ESTADO
                 lineHeight={{ md: "shorter" }}
                 >
 
-CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
+                  CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               </chakra.h2>
               <Link href="/cariacica">
               <Image
@@ -286,7 +293,7 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
                 alt="campanha cariacica"
                 loading="lazy"
               />
-              </Link>   
+               <Box w="80%">       
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
@@ -295,6 +302,7 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               >
          Cariacica terminou o ano de 2019 como a cidade campeã de investimentos no ES. Foram realizadas muitas melhorias e entregas importantes para a população. A campanha presta contas da atividade municipal no ano, apresentando uma cidade que cresce a olhos vistos, otimista com o futuro e que trabalha muito no presente.
               </chakra.p>
+              </Box>
               <Button
                 w={{ base: "full", sm: "auto" }}
                 size="lg"
@@ -303,11 +311,12 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
                 color={useColorModeValue("white", "gray.200")}
                 as="a"
               >
-              <Link href="/cariacica">
+              
                     Leia Mais
-                  </Link>
+                
 
               </Button>
+              </Link>
             </Box>
         
          
@@ -315,17 +324,7 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
 
 
 
-
-
-
-
-
-
-
-
-
-
-          {/* Campanha Cariacica */}
+          {/* Campanha tribuna */}
      
         
             <Box  order={{ md: 2 }}>
@@ -342,6 +341,11 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
            A TRINUNA: FAKE NEWS
               </chakra.h2>
               <Link href="/tribuna">
+              
+                              {/*
+                src="/images/campanhas/tribuna/tribuna.jpg"
+                              */}
+              
               <Image
                 w="80%"
                 
@@ -350,8 +354,8 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
                 alt="campanha cariacica"
                 loading="lazy"
               />
-              </Link>
-                      
+             
+              <Box w="80%">        
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
@@ -362,16 +366,20 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
               Alerta de Fake News! Passe para frente. Conheça esta campanha que fizemos para a Rede Tribuna com o objetivo de reafirmar a credibilidade dos jornais impressos perante as Fake News que se disseminam nas plataformas de comunicação tecnológicas. Vale sempre lembrar: a melhor versão sobre um fato é a verdade.
 
               </chakra.p>
+              
+              </Box>
               <Button
+               
+                  _hover={{ bg: "yellow.800" }}
                 w={{ base: "full", sm: "auto" }}
                 size="lg"
                 bg={useColorModeValue("yellow.700", "gray.700")}
-                _hover={{ bg: useColorModeValue("yellow.800", "gray.600") }}
                 color={useColorModeValue("white", "gray.200")}
                 as="a"
               >
                 Leia Mais
               </Button>
+              </Link>
             </Box>
         
         
@@ -392,6 +400,8 @@ CARIACICA: PENSANDO NO FUTURO FAZEMOS O PRESENTE
         </Box>
       </Flex>
       {/* Saiba Mais */}
+
+
       <Flex
         bg={useColorModeValue("black", "gray.600")}
         w="full"

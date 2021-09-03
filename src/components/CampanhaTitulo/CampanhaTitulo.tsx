@@ -40,8 +40,6 @@ alignItems="center"
 justifyContent="center"
 >
 
-
-
 <Box
   bg={useColorModeValue("white", "gray.800")}
   mx={{ lg: 2 }}

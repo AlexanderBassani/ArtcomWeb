@@ -1,12 +1,12 @@
 /* eslint-disable no-sparse-arrays */
 import React from "react";
-import Carrousel_Serra from "../components/Carrousel_img/Carrousel_img";
+
 import Header from "../components/Header/Header"; 
 import Footer from "../components/Footer/Footer";
 import BoxTextoFichaSerra from "../components/Serra/BoxTextoFicha/BoxTextoFicha";
 import GaleriaSerra from "../components/Serra/Galeria/Galeria";
 
-
+import Carrousel from "../components/Carrousel/Carrousel";
 import { CarrouselCampaignSerraComponent } from "../constants/CarrouselConstants";
 
 
@@ -67,12 +67,9 @@ export default function Serra() {
  
 
 
-    <Carrousel_Serra campaigns={CarrouselCampaignSerraComponent}></Carrousel_Serra>
-  {/*
-    <GaleriaSerra />
-  */}
-
-      
+   {/* <Carrousel_Serra campaigns={CarrouselCampaignSerraComponent}></Carrousel_Serra>*/}
+  
+    <Carrousel campaigns={CarrouselCampaignSerraComponent}></Carrousel>
 
 
 

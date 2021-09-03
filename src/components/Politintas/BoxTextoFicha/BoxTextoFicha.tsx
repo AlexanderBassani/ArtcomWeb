@@ -1,13 +1,17 @@
 import React from "react";
 import { chakra, Box, Stack, Text, Center, Flex, useColorModeValue, Link } from "@chakra-ui/react";
-import QuadroTexto from "../QuadroTexto/QuadroTexto";
-import FichaTecnica from "../../FichaTecnica/FichaTecnica";
+
 import CampanhaTitulo from "../../CampanhaTitulo/CampanhaTitulo";
 
-import {  FichaPolitintasComponent } from "../../../constants/FichaTecnica";
+/*import {  FichaPolitintasComponent } from "../../../constants/FichaTecnica";
+
+import QuadroTexto from "../QuadroTexto/QuadroTexto";
+import FichaTecnica from "../../FichaTecnica/FichaTecnica";
+
+*/
 import {  CampanhaPolitintasComponent } from "../../../constants/FichaTecnica";
 
-export default function App(){
+export default function BoxTextoFicha(){
   return (
 
 

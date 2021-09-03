@@ -12,7 +12,7 @@ export const CardTeamComponent: CardTeamProps[] = [
   {
     name: "Jorge Pedrosa",
     role: "Diretor de Criação",
-    path: "/images/carrousel-header/JORGE-300x300.jpg",
+    path: "/images/carrousel-header/JORGE.jpg",
   },
   {
     name: "Cilene Bassani",
@@ -27,7 +27,7 @@ export const CardTeamComponent: CardTeamProps[] = [
   {
     name: "Camila Stockler",
     role: "Gerente de Markenting Digital",
-    path: "/images/carrousel-header/CAMILA 11.jpg",
+    path: "/images/carrousel-header/CAMILA.jpg",
   },
   {
     name: "Ricardo Leite",

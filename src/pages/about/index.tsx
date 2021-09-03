@@ -1,3 +1,4 @@
+
 import {
   Box,
   Flex,
@@ -17,11 +18,12 @@ import { CardTeamComponent } from "../../constants/TeamConstants";
 import Header from "../../components/Header/Header";
 import SEO from "../../components/SEO";
 import CardTeam from "../../components/CardTeam/CardTeam";
+import Footer from "../../components/Footer/Footer";
 export default function About() {
   return (
 
 
-          <Flex  w={["Full","270px","640px","720px","1366px","1024px"]} h={["Full","200px","360px","540x","1024px","768px"]}  mx="auto" mb={["5", "1"]}
+          <Flex  w={["1366px"]} h={["1024px"]}  mx="auto" mb={["5", "1"]}
           bg="white.700" width="100%" flexDirection="column">
                 <SEO title="Sobre | ArtCom" description="Some description" />
 
@@ -31,15 +33,15 @@ export default function About() {
 
 
 
-                <AspectRatio maxW="100%" maxH="450px" ratio={10 / 7}>
-  <iframe
-    src="https://www.youtube.com/embed/G0UMNrpW42g"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                    <AspectRatio maxW="100%" maxH="450px" ratio={10 / 7}>
+                      <iframe
+                        src="https://www.youtube.com/embed/G0UMNrpW42g"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
 
-  </iframe>
-</AspectRatio>
+                      </iframe>
+                    </AspectRatio>
 
 
 
@@ -111,31 +113,37 @@ export default function About() {
                 </Box>
 
                                
-        </Flex>
+                </Flex>
 
 
 
+                    <Center>
 
+                      <SimpleGrid w="400px" columns={2}>
+                    
+                      {CardTeamComponent.map((employee, index) => (
+                        <CardTeam
+                          key={index}
+                          name={employee.name}
+                          role={employee.role}
+                          path={employee.path}
+                        ></CardTeam>
+                      ))}
 
-        <SimpleGrid columns={2}>
-        {CardTeamComponent.map((employee, index) => (
-          <CardTeam
-            key={index}
-            name={employee.name}
-            role={employee.role}
-            path={employee.path}
-          ></CardTeam>
-        ))}
-      </SimpleGrid>
+                    
+                    </SimpleGrid>
 
-
+                  </Center>
       
+
+                  <Footer />
           </Flex>
 
 
 
 
        
+
 
 
 
