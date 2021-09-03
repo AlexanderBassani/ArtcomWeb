@@ -230,7 +230,7 @@ export default function Home() {
                  w="80%"
               
                 fit="fill"
-                src="/images/campanhas/serra/serra.jpg"
+                src="/images/campanhas/serra/Serra.jpg"
                 alt=""
                 loading="lazy"
               />
@@ -289,7 +289,7 @@ export default function Home() {
                 w="80%"
                 
                 fit="fill"
-                src="/images/campanhas/cariacica/cariacica.jpg"
+                src="/images/campanhas/cariacica/Cariacica.jpg"
                 alt="campanha cariacica"
                 loading="lazy"
               />
