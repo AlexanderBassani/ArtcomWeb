@@ -58,18 +58,9 @@ const slides = [
 
 */}
 export const CarrouselCampaignSerraComponent: CarrouselProps[] = [
-
-  {
-    slug: "Campanha - Serra",
-    title: "Parque da Cidade - Video ",
-    summary: "",
-    path: "https://www.youtube.com/embed/JYPTvARAKiA?list=PL59ihBqdPntmBU8GjQOLevtBmvAOxIB3s",
-    type: "video",
-  },
-
   {
     slug: "",
-    title: "Campanha Serra",
+    title: "",
     summary: "",
     path: "/images/campanhas/serra/Ser1.jpg",
     type: "image",
@@ -78,14 +69,14 @@ export const CarrouselCampaignSerraComponent: CarrouselProps[] = [
     slug: "",
     title: "",
     summary: "",
-    path: "/images/campanhas/serra/Ser2.gpg",
+    path: "/images/campanhas/serra/Ser2.jpg",
     type: "image",
   },
   {
     slug: "",
     title: "",
-    summary: "shoes_summary",
-    path: "/images/campanhas/serra/Serra2 2.jpg",
+    summary: "",
+    path: "/images/campanhas/serra/Ser3.jpg",
     type: "image",
   },
 
