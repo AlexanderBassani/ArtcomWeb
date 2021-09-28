@@ -24,7 +24,8 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
     if (isVideo == "video") {
       console.log("campaignVideo", campaign);
       return (
-        <Flex w={["270px","640px","1366px"]} h={["270px","","360px", "1024px"]}  mx="auto" mb={["5", "1"]}>
+        <Flex w={["270px", "640px", "1366px"]} h={["270px", "", "360px", "1024px"]} mx="auto" mb={["5", "1"]}>
+          {/* <Flex w={["270px","640px","1366px"]} h={["270px","","360px", "1024px"]}  mx="auto" mb={["5", "1"]}> */}
           <iframe
             src={campaign.path}
             title={campaign.title}
@@ -35,7 +36,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
             loading="lazy"
             allowFullScreen
           ></iframe>
-       
+
         </Flex>
       );
     }
@@ -64,11 +65,12 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
 
   return (
 
-    <Flex   w={["270px","640px","1366px","1024px", "600px", "900px", "1200px","1281px","1366"]} h={["200px","360px", "1024px","768px","768px","768px"]}  mx="auto" mb={["5", "1"]}>
+    <Flex w={["100%"]} h={["auto"]} mb={["5", "1"]}>
+      {/* <Flex   w={["270px","640px","1366px","1024px", "600px", "900px", "1200px","1281px","1366"]} h={["200px","360px", "1024px","768px","768px","768px"]}  mx="auto" mb={["5", "1"]}> */}
       <Swiper
         slidesPerView={1}
         navigation
-        spaceBetween={10}
+        // spaceBetween={10}
         pagination={{ clickable: true }}
         autoplay={{
           delay: 4000,
@@ -84,22 +86,22 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
                 align="center"
                 justify="center"
                 direction="column"
-                bgImage={`url('${campaign.path}')`} 
+                bgImage={`url('${campaign.path}')`}
                 bgPosition="100%"
                 bgRepeat="no-repeat"
                 bgSize="cover"
                 textAlign="center"
                 cursor="pointer"
               >
-              <IsVideo {...campaign}></IsVideo> 
-          
+                <IsVideo {...campaign}></IsVideo>
 
-            
+
+
 
               </Flex>
-              
-              
-               </Link>
+
+
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

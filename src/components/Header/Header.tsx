@@ -32,24 +32,26 @@ export default function Header({ bg }: Props) {
     >
       <Flex
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent=""
         mx="auto"
         position="sticky"
       >
-        <Flex paddingLeft="20%">
+        {/* <Flex paddingLeft="20%"> */}
           <chakra.a 
+            paddingLeft="20%"
+            margin=" 0 15px 0 0"
             href="/"
             title="ArtCom Home Page"
             display="flex"
             alignItems="center"
           >
-           
+         
 
       
             <Image 
-                border="1px"
+                border="0px"
                 borderColor="Yellow"
-                h="50px"
+                h="80px"
                 fit="fill"
                 src="/images/logo/logo_artcom3.png"
                 alt="Politintas"
@@ -64,11 +66,11 @@ export default function Header({ bg }: Props) {
 
 
        
-        </Flex>
-        <HStack display="flex" alignItems="center" spacing={1}>
+        {/* </Flex> */}
+        <HStack >{/*display="block" alignItems="center" spacing={1} */}
           <HStack
             spacing={1}
-            paddingRight="300px"
+            // paddingRight="300px"
             mr={1}
             color="black"
             display={{ base: "none", xl: "inline-flex" }}

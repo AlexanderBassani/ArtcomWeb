@@ -23,126 +23,126 @@ export default function About() {
   return (
 
 
-          <Flex  w={["1366px"]} h={["1024px"]}  mx="auto" mb={["5", "1"]}
-          bg="white.700" width="100%" flexDirection="column">
-                <SEO title="Sobre | ArtCom" description="Some description" />
+    <Flex w={["1366px"]} h={["1024px"]} mx="auto" mb={["5", "1"]}
+      bg="white.700" width="100%" flexDirection="column">
+      <SEO title="Sobre | ArtCom" description="Some description" />
 
 
-                <Header bg="yellow.100%" />
-
-
-
-
-                                    <AspectRatio maxW="100%" maxH="450px" ratio={10 / 7}>
-                      <iframe
-                        src="https://www.youtube.com/embed/G0UMNrpW42g"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-
-                      </iframe>
-                    </AspectRatio>
+      <Header bg="yellow.100%" />
 
 
 
+
+      <AspectRatio margin="0" maxW="100%" maxH="auto" ratio={19 / 10}>
+        <iframe
+          src="https://www.youtube.com/embed/G0UMNrpW42g"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+
+        </iframe>
+      </AspectRatio>
 
 
 
 
 
-                                        {/* Pensar Analizar 
+
+
+
+      {/* Pensar Analizar 
                                         
                                             Criar Realizar
                                         */}
 
-                                            <Flex> 
-                                               
-
-                                                <Box paddingLeft="20%">
-                                                <Text   fontWeight="bold"
-                                                        color="yellow.700"
-                                                        fontSize={["2rem", "5xl", "6xl"]}
-
-                                                    mt={["2", "1"]}>Pensar . Analisar . Criar . Realizar</Text>
+      <Flex>
 
 
-                                               
-                                              
-                                            
-                              
-                                              </Box>
+        <Box margin="auto">
+          <Text fontWeight="bold"
+            color="yellow.700"
+            fontSize={["2rem", "5xl", "6xl"]}
 
-                                              </Flex>
-                                          {/*  FIM PENSAR ANALIZAR CRIAR REALIZAR */}
+            mt={["2", "1"]}>Pensar.  Analisar.  Criar.  Realizar</Text>
 
 
 
 
 
-                                          <Flex>
-                                               <Center w="200px" bg="white.500">
-                                               </Center>
 
-                                                      <Center w="100%" bg="white.500">
-                                                <Text   fontWeight="bold"
-                                                        color="gray.700"
-                                                        fontSize={["2em", "4xl", "6xl"]}
-                                                        mt={["2", "4"]}>INTEGRAÇÃO É A CHAVE DO SUCESSO</Text>
-                                              </Center>
+        </Box>
 
-                                              <Center w="300px" bg="white.500"></Center>
-                                              
-                                              
-                                              
-                                              
-                                            </Flex>
-
-
-
-                                        <Flex>
-          
-
-                                                     <Box w="100%" h="auto" align="center">
-                  <Image
-                    w="auto"
-                    h="auto"
-                    src="/images/img-sobre/sobre1.png"
-                    alt="Sobre ArtCom"
-                    loading="lazy"
-                  />
-                </Box>
-
-                               
-                </Flex>
-
-
-
-                    <Center>
-
-                      <SimpleGrid w="400px" columns={2}>
-                    
-                      {CardTeamComponent.map((employee, index) => (
-                        <CardTeam
-                          key={index}
-                          name={employee.name}
-                          role={employee.role}
-                          path={employee.path}
-                        ></CardTeam>
-                      ))}
-
-                    
-                    </SimpleGrid>
-
-                  </Center>
-      
-
-                  <Footer />
-          </Flex>
+      </Flex>
+      {/*  FIM PENSAR ANALIZAR CRIAR REALIZAR */}
 
 
 
 
-       
+
+      <Flex>
+        {/* <Center w="200px" bg="white.500">
+        </Center> */}
+
+        <Center margin="auto" bg="white.500">
+          <Text fontWeight="bold"
+            color="gray.700"
+            fontSize={["2.5rem"]} //fontSize={["2rem", "4xl", "6xl"]}
+            mt={["2", "4"]}>INTEGRAÇÃO É A CHAVE DO SUCESSO</Text>
+        </Center>
+
+        {/* <Center w="300px" bg="white.500"></Center> */}
+
+
+
+
+      </Flex>
+
+
+
+      <Flex>
+
+
+        <Box w="100%" h="auto" align="center">
+          <Image
+            w="70vw"
+            h="auto"
+            src="/images/img-sobre/sobre1.png"
+            alt="Sobre ArtCom"
+            loading="lazy"
+          />
+        </Box>
+
+
+      </Flex>
+
+
+
+      <Center>
+
+        <SimpleGrid w="80vw" columns={3}>
+
+          {CardTeamComponent.map((employee, index) => (
+            <CardTeam
+              key={index}
+              name={employee.name}
+              role={employee.role}
+              path={employee.path}
+            ></CardTeam>
+          ))}
+
+
+        </SimpleGrid>
+
+      </Center>
+
+
+      <Footer />
+    </Flex>
+
+
+
+
+
 
 
 
