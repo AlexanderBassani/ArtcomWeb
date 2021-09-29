@@ -70,6 +70,7 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
       <Swiper
         slidesPerView={1}
         navigation
+        width="1235px;"
         // spaceBetween={10}
         pagination={{ clickable: true }}
         autoplay={{
@@ -81,7 +82,9 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
           <SwiperSlide key={index}>
             <Link href={`${campaign.slug}`}>
               <Flex
-                w="100%"
+                // w="100%"
+                m="auto"
+                w="1235px;"
                 h="100%"
                 align="center"
                 justify="center"

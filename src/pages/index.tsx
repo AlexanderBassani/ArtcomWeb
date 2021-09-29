@@ -77,8 +77,8 @@ export default function Home() {
                   lineHeight="shorter"
                   color={useColorModeValue("yellow.700", "gray.100")}
                 >
-                  <chakra.span display="table-row-group" margin="0 10px 0 0" maxWidth="450px" style={{textAlign: "right"}}>
-                    IDEIAS CONECTAM PESSOAS!
+                  <chakra.span display="flex" margin="0 10px 0 0" style={{textAlign: "right",display: "flex",justifyContent:"flex-end"}}>
+                    IDEIAS CONECTAM<br /> PESSOAS!
                   </chakra.span>
                 </chakra.h1>
               </Box>
@@ -135,7 +135,8 @@ export default function Home() {
         // pl={51}
         // pr={51}
         m="auto"
-        w="90vw"
+        minWidth="70vw"
+        maxWidth="80vw"
         justifyContent="center"
         alignItems="center"
       >
