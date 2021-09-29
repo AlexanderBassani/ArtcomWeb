@@ -65,12 +65,11 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
 
   return (
 
-    <Flex w={["100%"]} h={["auto"]} mb={["5", "1"]}>
-      {/* <Flex   w={["270px","640px","1366px","1024px", "600px", "900px", "1200px","1281px","1366"]} h={["200px","360px", "1024px","768px","768px","768px"]}  mx="auto" mb={["5", "1"]}> */}
+    // <Flex w={["100%"]} h={["auto"]} mb={["5", "1"]}>
+      <Flex   w={["270px","640px","1366px","1024px", "600px", "900px", "1200px","1281px","1366"]} h={["200px","360px", "1024px","768px","768px","768px"]}  mx="auto" mb={["5", "1"]}>
       <Swiper
         slidesPerView={1}
         navigation
-        width="1235px;"
         // spaceBetween={10}
         pagination={{ clickable: true }}
         autoplay={{
@@ -83,8 +82,8 @@ export default function CarrouselCampaign({ campaigns }: CarrouselData) {
             <Link href={`${campaign.slug}`}>
               <Flex
                 // w="100%"
-                m="auto"
-                w="1235px;"
+                // m="auto"
+                // w="1235px;"
                 h="100%"
                 align="center"
                 justify="center"
