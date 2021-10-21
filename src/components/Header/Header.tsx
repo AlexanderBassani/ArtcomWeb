@@ -36,7 +36,7 @@ export default function Header({ bg }: Props) {
         mx="auto"
         position="sticky"
       >
-        <Flex paddingLeft="20%">
+        <Flex >
           <chakra.a 
             href="/"
             title="ArtCom Home Page"
